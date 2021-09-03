@@ -44,19 +44,10 @@
             {
                 "name": "domain",
                 "type": "domain",
-                "ask": {
-                    "en": "Choose a domain for your Django app",
-                    "fr": "Choisissez un nom de domaine pour vorte application Django"
-                },
                 "example": "domain.org"
             },
             {
                 "name": "path",
-                "type": "path",
-                "ask": {
-                    "en": "Choose a path for your Django app",
-                    "fr": "Choisissez l'adresse pour votre application Django"
-                },
                 "example": "/django_app",
                 "default": "/django_app"
             },
@@ -80,12 +71,19 @@
             },
 	    {
                 "name": "email",
-                "type": "email",
+                "type": "string",
                 "ask": {
                     "en": "Choose email were send notification",
                     "fr": "Choisissez l'email vers lequel envoyer les notifications"
                 },
                 "example": "admin@example.tld"
+            },
+	    {
+                "name": "is_public",
+                "type": "boolean",
+		"help": {
+			"en": "Is the website meant to be public ?"
+		}
             }
         ]
     }
