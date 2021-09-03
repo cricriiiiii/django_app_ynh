@@ -2,7 +2,7 @@
     "name": "Application Django",
     "id": "django_app",
     "packaging_format": 1,
-    "version": "2019-03-10",
+    "version": "4.2~ynh1",
     "description": {
         "en": "A django app.",
         "fr": "Une application django."
@@ -15,7 +15,7 @@
     },
     "url": "https://github.com/Jojo144/django_app_ynh",
     "requirements": {
-        "yunohost": ">> 3.0"
+        "yunohost": ">> 4.2"
     },
     "multi_instance": true,
     "services": [
