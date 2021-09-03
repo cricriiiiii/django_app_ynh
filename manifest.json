@@ -48,6 +48,7 @@
             },
             {
                 "name": "path",
+		"type": "path",
                 "example": "/django_app",
                 "default": "/django_app"
             },
