@@ -16,7 +16,7 @@ path=$YNH_APP_ARG_PATH
 admin=$YNH_APP_ARG_ADMIN
 passwd=$YNH_APP_ARG_PASSWD
 email=$YNH_APP_ARG_EMAIL
-is_public=$YNH_APP_IS_PUBLIC
+is_public=$YNH_APP_ARG_IS_PUBLIC
 
 final_path=/opt/$app
 
@@ -27,6 +27,13 @@ sudo useradd $app -d $final_path \
 
 ynh_abort_if_errors
 
+
+# Check domain/path availability
+# ynh_webpath_available $domain $path
+
+# FXME Useful? Make the script fail with
+# This app is already installed. The url cannot be changed just by this function. Look into `app changeurl` if it's available.
+ynh_webpath_register $app $domain $path
 
 # path=$(ynh_normalize_url_path $path)
 
@@ -41,12 +48,6 @@ ynh_app_setting_set "$app" email "$email"
 secret=$(ynh_string_random 60) # A bug don't allow to do random string bigger than 24
 ynh_app_setting_set "$app" secret "$secret"
 
-# Check domain/path availability
-# ynh_webpath_available $domain $path
-
-# FXME Useful? Make the script fail with
-# This app is already installed. The url cannot be changed just by this function. Look into `app changeurl` if it's available.
-ynh_webpath_register $app $domain $path
 
 
 # Dependencies
