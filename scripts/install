@@ -43,7 +43,7 @@ ynh_webpath_available $domain $path
 
 # FXME Useful? Make the script fail with
 # This app is already installed. The url cannot be changed just by this function. Look into `app changeurl` if it's available.
-# ynh_webpath_register $app $domain $path
+ynh_webpath_register $app $domain $path
 
 
 # Dependencies
