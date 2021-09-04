@@ -39,7 +39,7 @@ secret=$(ynh_string_random 60) # A bug don't allow to do random string bigger th
 ynh_app_setting_set "$app" secret "$secret"
 
 # Check domain/path availability
-ynh_webpath_available $domain $path
+# ynh_webpath_available $domain $path
 
 # FXME Useful? Make the script fail with
 # This app is already installed. The url cannot be changed just by this function. Look into `app changeurl` if it's available.
