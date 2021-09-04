@@ -82,9 +82,7 @@
 	    {
                 "name": "is_public",
                 "type": "boolean",
-		"help": {
-			"en": "Is the website meant to be public ?"
-		}
+                "default": true
             }
         ]
     }
