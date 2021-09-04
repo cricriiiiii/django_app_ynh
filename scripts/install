@@ -28,7 +28,7 @@ sudo useradd $app -d $final_path \
 ynh_abort_if_errors
 
 
-path=$(ynh_normalize_url_path $path)
+# path=$(ynh_normalize_url_path $path)
 
 ynh_app_setting_set "$app" repo "$repo"
 ynh_app_setting_set "$app" project "$project"
