@@ -5,6 +5,9 @@ source /usr/share/yunohost/helpers
 
 
 app=$YNH_APP_INSTANCE_NAME
+echo $YNH_APP_INSTANCE_NAME
+echo $YNH_APP_ID
+echo $YNH_APP_INSTANCE_NUMBER
 
 repo=$YNH_APP_ARG_REPO
 project=$YNH_APP_ARG_PROJECT
