@@ -50,7 +50,7 @@ ynh_webpath_available $domain $path
 ynh_install_app_dependencies $pkg_dependencies
 
 sudo mkdir -p $final_path
-app_path=$final_path/app
+app_path=$final_path
 sudo git clone $repo $app_path
 
 python3 -m venv $final_path/venv
