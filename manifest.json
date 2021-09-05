@@ -1,6 +1,6 @@
 {
     "name": "Application Django",
-    "id": "django_app",
+    "id": "djangoapp",
     "packaging_format": 1,
     "version": "4.2~ynh1",
     "description": {
