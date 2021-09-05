@@ -65,7 +65,7 @@ $venv_pip install -r $app_path/requirements.txt
 
 # Configuration Django
 settings_ynh=$app_path/$project/settings_ynh.py
-cp $app_path/$project/settings_ynh.py.example $settings_ynh
+# cp $app_path/$project/settings_ynh.py.example $settings_ynh
 ynh_replace_string "YNH_APP_ARG_ADMIN" $admin $settings_ynh
 ynh_replace_string "YNH_APP_ARG_DOMAIN" $domain $settings_ynh
 ynh_replace_string "YNH_APP_ARG_PATH" $path $settings_ynh
